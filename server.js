@@ -11,9 +11,9 @@ var Strategy = require('passport-twitter').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-    consumerKey: "ZP1zG4dzJKTA8OM9CXZjYhhCr",
-    consumerSecret: "Oz9KSmiFesD2Krktas1Da7zqXWDsyPddc1Ffo6iHVS5bLGOBGY",
-    callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
+    consumerKey: 'ZP1zG4dzJKTA8OM9CXZjYhhCr',
+    consumerSecret: 'Oz9KSmiFesD2Krktas1Da7zqXWDsyPddc1Ffo6iHVS5bLGOBGY',
+    callbackURL: 'https://testlogin34.herokuapp.com/'
   },
   function(token, tokenSecret, profile, cb) {
     // In this example, the user's Twitter profile is supplied as the user
